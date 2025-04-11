@@ -1,0 +1,259 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+}
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background: #111111;
+
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.header {
+    background: #12110E80;
+    position: relative;
+    padding: 16px;
+
+    @media screen and (min-width: 414px) {
+        padding: 29px 16px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding: 29px 32px;
+    }
+    @media screen and (min-width: 1280px) {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 64px;
+    }
+    @media screen and (min-width: 1440px) {
+        padding: 29px 124px;
+    }
+
+}
+
+.logo {
+    max-width: 210px;
+    img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.2s;
+
+
+    .nav-item {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    @media screen and (min-width: 1280px) {
+        height: auto;
+        flex-direction: row;
+        padding: 0 64px 0 0;
+
+    }
+}
+.cta-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    @media screen and (min-width: 1280px) {
+        display: none;
+    }
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 12px 0 0;
+
+    @media screen and (min-width: 1280px) {
+        flex-direction: row;
+    }
+}
+
+.active-menu {
+    height: 390px;
+}
+
+.header-buttons {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 16px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 88px;
+
+        .register {
+            padding: 10px 24px;
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        position: static;
+        transform: none;
+    }
+
+
+}
+
+.active-menu-btn {
+    display: none;
+}
+
+.burger {
+    width: 22px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 26px;
+    right: 21px;
+
+    @media screen and (min-width: 414px) {
+        top: 40px;
+    }
+
+    @media screen and (min-width: 768px) {
+        right: 32px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        display: none;
+    }
+}
+
+.line {
+    display: block;
+    position: absolute;
+    width: 22px;
+    height: 2.5px;
+    background: #EFC653;
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+}
+
+.top {
+    top: 0;
+}
+
+.middle {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.active .top {
+    transform: rotate(-45deg);
+    top: 9px;
+}
+
+.active .middle {
+    width: 0;
+}
+
+.active .bottom {
+    transform: rotate(45deg);
+    bottom: 9px;
+}
+
+.register {
+    padding: 14px 95px;
+    background-image: url("/images/button.jpg");
+    border-radius: 8px;
+    background-size: cover;
+    color: #12110E;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+        filter: brightness(1.2);
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding: 10px 24px;
+    }
+}
+
+.login {
+    color: #EFC653;
+    text-decoration: none;
+    font-weight: 500;
+}
