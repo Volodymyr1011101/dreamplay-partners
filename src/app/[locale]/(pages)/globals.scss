@@ -70,6 +70,7 @@ table {
     background: #12110E80;
     position: relative;
     padding: 16px;
+    z-index: 99999;
 
     @media screen and (min-width: 414px) {
         padding: 29px 16px;
@@ -81,7 +82,7 @@ table {
     @media screen and (min-width: 1280px) {
         display: flex;
         justify-content: space-between;
-        padding: 0 64px;
+        padding: 29px 64px;
     }
     @media screen and (min-width: 1440px) {
         padding: 29px 124px;
@@ -106,7 +107,10 @@ table {
     height: 0px;
     overflow: hidden;
     transition: height 0.2s;
-
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background: #111;
 
     .nav-item {
         color: #fff;
@@ -116,8 +120,9 @@ table {
     @media screen and (min-width: 1280px) {
         height: auto;
         flex-direction: row;
-        padding: 0 64px 0 0;
-
+        padding: 0 0 0 0;
+        position: static;
+        width: initial;
     }
 }
 .cta-btn {
@@ -235,7 +240,7 @@ table {
 }
 
 .register {
-    padding: 14px 95px;
+    padding: 14px 75px;
     background-image: url("/images/button.jpg");
     border-radius: 8px;
     background-size: cover;
@@ -257,3 +262,4 @@ table {
     text-decoration: none;
     font-weight: 500;
 }
+
