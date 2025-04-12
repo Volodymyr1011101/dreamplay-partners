@@ -16,7 +16,7 @@ const Commissions = () => {
         }
     ]
     return (
-        <div className={`relative`}>
+        <div className={`relative`} id="commissions">
             <Image src={`/images/commissionsglow.png`} width={1502} height={1424} alt={`glow`} className={`absolute top-[-300px] right-0 l:w-full max-h-[1300px] object-fill m:top-[-96px]`}/>
             <div className={`w-full bg-[#EFC653] rounded-[24px] relative z-100 px-4 py-6 xxm:x-8 xxm:py-8 m:py-16 m:px-16 l:py-[64px] l:px-[124px] mb-[40px] xxm:mb-[96px]`}>
                 <div className={`flex gap-3 items-center mb-6`}>

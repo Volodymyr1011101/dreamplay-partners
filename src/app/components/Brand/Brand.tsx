@@ -10,7 +10,7 @@ const Brand = () => {
         "High LTVs and engagement rates backed by controlled product cycles"
     ];
     return (
-        <div className={`relative z-10 px-4 m:flex gap-16 items-center justify-center xxm:px-8 m:px-16 l:px-[124px] mb-[40px] xxm:mb-[96px]`}>
+        <div className={`relative z-10 px-4 m:flex gap-16 items-center justify-center xxm:px-8 m:px-16 l:px-[124px] mb-[40px] xxm:mb-[96px]`} id='brand'>
             <div className={`mb-6 m:w-[100%]`}>
 
                 <div className={`flex gap-3 items-center mb-6`}>

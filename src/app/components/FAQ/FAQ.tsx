@@ -42,7 +42,7 @@ const FAQ = () => {
         });
     }, []);
     return (
-        <div className="px-4 xxm:px-8 relative z-10 m:px-16 l:px-[124px] mb-[72px]">
+        <div className="px-4 xxm:px-8 relative z-10 m:px-16 l:px-[124px] mb-[72px]" id='faq'>
             <div className={`flex items-center gap-3 mb-6`}>
                 <span>
                     <Image src={'/icons/faq.png'} alt={`icon`} width={42} height={42} />

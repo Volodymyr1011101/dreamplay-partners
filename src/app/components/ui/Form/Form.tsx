@@ -14,7 +14,16 @@ const Form = () => {
 
     const onSubmit = async (data: any) => {
         const dataToSend = {
-            partner_user: data
+            partner_user: {
+                full_name: data.full_name,
+                company_name: data.company_name,
+                phone: data.phone,
+                email: data.email,
+                address: data.address,
+                password: data.password,
+                password_confirmation: data.password_confirmation,
+                terms_accepted: data.terms_accepted
+            }
         }
         console.log(dataToSend);
         const result = await fetch(`https://dashboard.dreamplayaffiliates.com/api/client/partner`, {

@@ -20,11 +20,11 @@ const Header: NextComponentType<NextPageContext, {}> = () => {
             </div>
             <nav className="nav">
                 <ul className="nav-list">
-                    <li><a href="#" className="nav-item">Advantages</a></li>
-                    <li><a href="#" className="nav-item">Commissions</a></li>
-                    <li><a href="#" className="nav-item">Our Brand</a></li>
-                    <li><a href="#" className="nav-item">FAQ</a></li>
-                    <li><a href="#" className="nav-item">Contacts</a></li>
+                    <li><a href="#partners" className="nav-item">Advantages</a></li>
+                    <li><a href="#commissions" className="nav-item">Commissions</a></li>
+                    <li><a href="#brand" className="nav-item">Our Brand</a></li>
+                    <li><a href="#faq" className="nav-item">FAQ</a></li>
+                    <li><a href="#connect" className="nav-item">Contacts</a></li>
                 </ul>
                 <div className="cta-btn">
                     <a href="https://dashboard.dreamplayaffiliates.com/affiliate_registration/tfc6c1f52" className="register">Become our Partner</a>

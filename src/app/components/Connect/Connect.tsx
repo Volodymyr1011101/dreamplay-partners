@@ -3,7 +3,7 @@ import Form from "@/app/components/ui/Form/Form";
 
 const Connect = () => {
     return (
-        <div className={`px-4 relative overflow-hidden m:flex m:gap-8 xxm:p-8 m:px-[64px] l:px-[124px]`} >
+        <div className={`px-4 relative overflow-hidden m:flex m:gap-8 xxm:p-8 m:px-[64px] l:px-[124px]`} id={`connect`}>
             <div className={`m:w-[50%]`}>
                 <div className={`absolute w-[300px] m:w-[600px] z-[-1] top-[65px] m:top-[150px] right-[-30px] xxm:right-[150px] m:right-[initial] m:left-[200px]`}>
                     <Image width={200} height={200} src={`/images/inner.svg`} alt={`bg`} className={`absolute top-[-20px] w-full m:left-[-100px] m:top-[-120px]`} />

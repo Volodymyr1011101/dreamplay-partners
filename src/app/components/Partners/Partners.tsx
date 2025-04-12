@@ -34,7 +34,7 @@ const PartnersPage = () => {
         }
     ]
     return (
-        <div className={`px-4 text-white relative z-10 m:px-16 l:px-[124px] mb-8 xxm:mb-[96px]`}>
+        <div className={`px-4 text-white relative z-10 m:px-16 l:px-[124px] mb-8 xxm:mb-[96px]`} id='partners'>
             <Image src={`/images/partnersglow.png`} width={966} height={916} alt={`glow`} className={`absolute bottom-0 right-0`}/>
             <div className={`flex gap-3 items-center  mb-6`}>
                 <span><Image src={`/images/puzzle-dynamic-premium.png`} width={42} height={42} alt={'puzzle'}/></span>

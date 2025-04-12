@@ -45,6 +45,11 @@ body {
     background: #111111;
 
 }
+
+body, html {
+    scroll-behavior: smooth;
+}
+
 ol, ul {
     list-style: none;
 }
