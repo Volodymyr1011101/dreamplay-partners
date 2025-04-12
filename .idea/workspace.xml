@@ -5,29 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b4d833e-27b9-4636-b297-35349ba787d5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/icons/arrow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/bag.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/building.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/crown.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/faq.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/global.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/phone.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/play.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/wallet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/commissionsglow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/devices.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/partnersglow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/puzzle-dynamic-premium.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/Brand/Brand.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/Commissions/Commissions.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/FAQ/FAQ.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/FAQ/styles.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/Partners/Partners.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/[locale]/(pages)/globals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/(pages)/globals.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/(pages)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/(pages)/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Hero/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Hero/Hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/scrollToTop/ScrollToTop.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/scrollToTop/ScrollToTop.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Commissions/Commissions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Commissions/Commissions.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Footer/Footer.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +64,7 @@
       <option name="presentableId" value="Default" />
       <updated>1744392624511</updated>
       <workItem from="1744392626457" duration="1116000" />
-      <workItem from="1744393766863" duration="19584000" />
+      <workItem from="1744393766863" duration="20515000" />
     </task>
     <servers />
   </component>

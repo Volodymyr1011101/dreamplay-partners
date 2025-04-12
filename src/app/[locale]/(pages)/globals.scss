@@ -309,3 +309,14 @@ table {
         }
     }
 }
+
+.footer-block {
+    &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background: #363533;
+        bottom: -24px ;
+    }
+}
