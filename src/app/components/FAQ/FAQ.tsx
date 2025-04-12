@@ -42,7 +42,7 @@ const FAQ = () => {
         });
     }, []);
     return (
-        <div className="px-4 xxm:px-8 relative z-10 m:px-16 l:px-[124px]">
+        <div className="px-4 xxm:px-8 relative z-10 m:px-16 l:px-[124px] mb-[72px]">
             <div className={`flex items-center gap-3 mb-6`}>
                 <span>
                     <Image src={'/icons/faq.png'} alt={`icon`} width={42} height={42} />
@@ -67,7 +67,7 @@ const FAQ = () => {
                     </div>
                 ))}
             </div>
-            <a href="#" className={`text-white max-w-[261px] border-2 border-[#24221C] border-solid bg-[#151618] flex  items-center justify-between pl-4 rounded-[100px] ml-auto`}><span>Still have questions? </span><span className={`p-[28px] bg-[#EFC653] rounded-[50%] `}><Image src={`/images/arrow.png`} alt={'arrow'} width={15} height={15} /></span></a>
+            <a href="https://t.me/Yaroslav" className={`text-white max-w-[261px] border-2 border-[#24221C] border-solid bg-[#151618] flex  items-center justify-between pl-4 rounded-[100px] ml-auto`}><span>Still have questions? </span><span className={`p-[28px] bg-[#EFC653] rounded-[50%] `}><Image src={`/images/arrow.png`} alt={'arrow'} width={15} height={15} /></span></a>
         </div>
     )
 }

@@ -27,13 +27,13 @@ const Header: NextComponentType<NextPageContext, {}> = () => {
                     <li><a href="#" className="nav-item">Contacts</a></li>
                 </ul>
                 <div className="cta-btn">
-                    <a href="#" className="register">Become our Partner</a>
-                    <a href="#" className="login">Log In</a>
+                    <a href="https://dashboard.dreamplayaffiliates.com/affiliate_registration/tfc6c1f52" className="register">Become our Partner</a>
+                    <a href="https://dashboard.dreamplayaffiliates.com/partner/ " className="login">Log In</a>
                 </div>
             </nav>
             <div className="header-buttons">
-                <a href="#" className="register">Become our Partner</a>
-                <a href="#" className="login">Log In</a>
+                <a href="https://dashboard.dreamplayaffiliates.com/affiliate_registration/tfc6c1f52" className="register">Become our Partner</a>
+                <a href="https://dashboard.dreamplayaffiliates.com/partner/ " className="login">Log In</a>
             </div>
             <div className="burger" onClick={() => handleActiveMenu()}>
                 <span className="line top"></span>

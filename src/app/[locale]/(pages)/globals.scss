@@ -320,3 +320,134 @@ table {
         bottom: -24px ;
     }
 }
+
+.connect {
+    &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background: #FBF8F34D;
+        bottom: -15px;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: -17.5px;
+        right: 0;
+        width: 6px;
+        height: 6px;
+        background: #EFC653;
+        border-radius: 50%;
+    }
+}
+
+.form {
+    position: relative;
+    margin-bottom: 2rem;
+
+    label {
+        display: block;
+        color: #999;
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px 40px 10px 0;
+        font-size: 16px;
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid #444;
+        color: #fff;
+        transition: border-color 0.3s;
+
+        &:focus {
+            outline: none;
+            border-color: #ffcc00; // жёлтая подсветка при фокусе
+        }
+
+        &::placeholder {
+            color: #666;
+        }
+    }
+    .invalid {
+        border-color: #ff4444;
+    }
+
+    .valid {
+        border-color: #ffcc00;
+    }
+
+    .icon {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: #fff;
+
+        svg {
+            cursor: pointer;
+            width: 20px;
+            height: 20px;
+        }
+
+        .check {
+            color: #ffcc00;
+        }
+    }
+
+    .custom-checkbox {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        font-size: 16px;
+        position: relative;
+        padding-left: 32px;
+        margin-bottom: 16px;
+        color: #fff;
+        user-select: none;
+
+        input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+
+            &:checked ~ .checkmark {
+                border-color: #FFD600;
+                background-color: #FFD600;
+
+                &::after {
+                    content: "✔";
+                    color: black;
+                    font-size: 14px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -58%);
+                }
+            }
+        }
+
+        .checkmark {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 20px;
+            width: 20px;
+            background-color: transparent;
+            border: 2px solid #FFD600;
+            border-radius: 4px;
+            transition: all 0.2s ease-in-out;
+        }
+    }
+
+}

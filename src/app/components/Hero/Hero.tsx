@@ -16,7 +16,7 @@ const Hero = () => {
                 <span className={`text-[20px] text-[#FBF8F3] leading-[30px] block mb-8 xxm:mb-12 m:mb-16`}>
                     Affiliate with Dreamplay Affiliates - an elite brand, owned by those who build the games.
                 </span>
-                <a href="#" className={`text-white max-w-[241px] border-2 border-[#24221C] border-solid bg-[#151618] flex  items-center justify-between pl-4 rounded-[100px]`}><span>Become a Partner</span><span className={`p-[28px] bg-[#EFC653] rounded-[50%]`}><Image src={`/images/arrow.png`} alt={'arrow'} width={15} height={15} /></span></a>
+                <a href="https://dashboard.dreamplayaffiliates.com/affiliate_registration/tfc6c1f52" className={`text-white max-w-[241px] border-2 border-[#24221C] border-solid bg-[#151618] flex  items-center justify-between pl-4 rounded-[100px]`}><span>Become a Partner</span><span className={`p-[28px] bg-[#EFC653] rounded-[50%]`}><Image src={`/images/arrow.png`} alt={'arrow'} width={15} height={15} /></span></a>
             </div>
             <Image src={"/images/bluebg.png"} className={`absolute top-[0] xxm:top-[-200px] left-[-100px] xxm:left-[-200px] hidden s:block m:top-[-500px]`} width="889" height="843" alt={`glow`}/>
         </div>
