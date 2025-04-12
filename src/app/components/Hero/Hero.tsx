@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Hero = () => {
     return (
-        <div className={`hero m:flex flex-row-reverse items-center m:pt-8`}>
+        <div className={`hero m:flex flex-row-reverse items-center m:pt-8 mb-16 xxm:mb-[144px]`}>
             <Image src={"/images/mainbg2.png"}  width="1100" height="1100" alt={"Hero"} className={`absolute top-0 right-0 hidden xxm:block`} />
             <Image src={`/images/herobg.png`} alt={`a`} width="600" height="600" className={`absolute top-0 right-0 xxm:hidden`} />
             <Image src={'/images/mainImage.png'} alt={'main'} width='800' height='620' className={`xxm:m-auto m:w-[50%] `} />
@@ -18,7 +18,7 @@ const Hero = () => {
                 </span>
                 <a href="#" className={`text-white max-w-[241px] border-2 border-[#24221C] border-solid bg-[#151618] flex  items-center justify-between pl-4 rounded-[100px]`}><span>Become a Partner</span><span className={`p-[28px] bg-[#EFC653] rounded-[50%]`}><Image src={`/images/arrow.png`} alt={'arrow'} width={15} height={15} /></span></a>
             </div>
-            <Image src={"/images/bluebg.png"} className={`absolute top-[160px] left-[-100px] hidden s:block`} width="889" height="843" alt={`glow`}/>
+            <Image src={"/images/bluebg.png"} className={`absolute top-[0] xxm:top-[-200px] left-[-100px] xxm:left-[-200px] hidden s:block m:top-[-500px]`} width="889" height="843" alt={`glow`}/>
         </div>
     )
 }

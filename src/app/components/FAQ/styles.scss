@@ -1,0 +1,29 @@
+.accordion {
+  overflow: hidden;
+  color: white;
+}
+
+.accordion-item {
+  border: 1px solid #24221C;
+  background-color: #151618;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #151618;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  padding: 0 1rem;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 500px;
+}
+
+.faq-arrow {
+  transition: all .3s ease;
+}
+
+.active .faq-arrow{
+  transform: rotate(0deg);
+}

@@ -5,16 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b4d833e-27b9-4636-b297-35349ba787d5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/bluebg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/herobg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/mainImage.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/mainbg2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/Hero/Hero.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/bag.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/building.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/crown.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/faq.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/global.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/phone.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/play.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/wallet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/commissionsglow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/devices.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/partnersglow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/puzzle-dynamic-premium.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/Brand/Brand.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/Commissions/Commissions.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/FAQ/FAQ.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/FAQ/styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/Partners/Partners.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/[locale]/(pages)/globals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/(pages)/globals.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/[locale]/(pages)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/(pages)/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Hero/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Hero/Hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/scrollToTop/ScrollToTop.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/scrollToTop/ScrollToTop.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +51,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Acer/Desktop/Dreamplay/pages/dreamplay-partners/public/images",
+    "last_opened_file_path": "C:/Users/Acer/Desktop/Dreamplay/pages/dreamplay-partners/public/icons",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -50,6 +63,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Acer\Desktop\Dreamplay\pages\dreamplay-partners\public\icons" />
       <recent name="C:\Users\Acer\Desktop\Dreamplay\pages\dreamplay-partners\public\images" />
     </key>
   </component>
@@ -69,7 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1744392624511</updated>
       <workItem from="1744392626457" duration="1116000" />
-      <workItem from="1744393766863" duration="5241000" />
+      <workItem from="1744393766863" duration="19584000" />
     </task>
     <servers />
   </component>
