@@ -10,19 +10,19 @@ const FAQ = () => {
         },
         {
             title: 'What GEOs and traffic sources are accepted?',
-            description: ['Register via the form', 'Your personal manager will reach out to assist', 'Launch campaigns, start earning']
+            description: ['We welcome social, PPC, SEO, UAC, streamers, and direct outreach. All traffic sources are reviewed individually to ensure alignment with our standards.']
         },
         {
             title: 'How do I get started?',
-            description: ['RevShare: Earn 35–50% of NGR', 'CPA: Receive a fixed one-time amount for each qualified lead', 'Hybrid: Combine CPA and RevShare for upfront + ongoing income']
+            description: ['Register via the form', 'Your personal manager will reach out to assist', 'Launch campaigns, start earning']
         },
         {
             title: 'Why should I trust Dreamplay Affiliates?',
-            description: ['need text']
+            description: [' We\'re not a reseller—we\'re the creators. Dreamplay Affiliates is backed by a full-cycle iGaming team that handles product, promos, and support directly. Our pillars are reliability, transparency, and safety. Every partner gets a dedicated manager and round-the-clock support.']
         },
         {
             title: 'How is commission calculated?',
-            description: ['need text']
+            description: ['RevShare: Earn 35–50% of NGR', 'CPA: Receive a fixed one-time amount for each qualified lead', 'Hybrid: Combine CPA and RevShare for upfront + ongoing income']
         },
     ]
     useEffect(() => {

@@ -1,18 +1,20 @@
 'use client'
 import { useForm } from "react-hook-form";
-import {useState} from "react";
+import {Dispatch, SetStateAction, useState} from "react";
 import Image from "next/image";
-const Form = () => {
+import {PacmanLoader} from "react-spinners";
+const Form = ({setShowModal}: {setShowModal: Dispatch<SetStateAction<boolean>> }) => {
     const [showPassword, setShowPassword] = useState(false);
-    const [check, setCheck] = useState(false);
+    const [isPending, setIsPending] = useState(false);
     const {
         register,
         handleSubmit,
         formState: { errors },
         watch
     } = useForm({ mode: 'onChange' });
-
     const onSubmit = async (data: any) => {
+        const bodyElement = document.querySelector("body");
+        setIsPending(true);
         const dataToSend = {
             partner_user: {
                 full_name: data.full_name,
@@ -25,7 +27,6 @@ const Form = () => {
                 terms_accepted: data.terms_accepted
             }
         }
-        console.log(dataToSend);
         const result = await fetch(`https://dashboard.dreamplayaffiliates.com/api/client/partner`, {
             method: "POST",
             headers: {
@@ -34,7 +35,13 @@ const Form = () => {
             },
             body: JSON.stringify(dataToSend),
         })
-        console.log(result);
+
+        if (result.status > 200 && result.status < 300) {
+            setIsPending(false);
+            setShowModal(true);
+            //@ts-ignore
+            bodyElement.style.overflow = "hidden";
+        }
     };
 
     const password = watch('password');
@@ -167,7 +174,12 @@ const Form = () => {
                     errors.terms_accepted && <span className="error text-[#f44]">{errors.terms_accepted.message}</span>
                 }
             </div>
-            <button type="submit" className={`text-white max-w-[261px] flex gap-5 items-center justify-between pl-4 rounded-[100px] ml-auto`}><span className={`text-[#EFC653]`}>Register</span><span className={`p-[28px] bg-[#EFC653] rounded-[50%] `}><Image src={`/images/arrow.png`} alt={'arrow'} width={15} height={15} /></span></button>
+            <button type="submit" className={`text-white max-w-[261px] flex gap-5 items-center justify-between pl-4 rounded-[100px] ml-auto ${isPending && 'pr-20'}`}>
+                <PacmanLoader loading={isPending} color="#EFC653" />
+                {!isPending
+                && <><span className={`text-[#EFC653]`}>Register</span><span className={`p-[28px] bg-[#EFC653] rounded-[50%] `}><Image src={`/images/arrow.png`} alt={'arrow'} width={15} height={15} /></span></>
+                }
+            </button>
         </form>
     );
 };
