@@ -3,18 +3,20 @@ import { useForm } from "react-hook-form";
 import {Dispatch, SetStateAction, useState} from "react";
 import Image from "next/image";
 import {PacmanLoader} from "react-spinners";
-const Form = ({setShowModal}: {setShowModal: Dispatch<SetStateAction<boolean>> }) => {
+const Form = ({setShowModal, setError}: {setShowModal: Dispatch<SetStateAction<boolean>>, setError: Dispatch<SetStateAction<boolean>> }) => {
     const [showPassword, setShowPassword] = useState(false);
     const [isPending, setIsPending] = useState(false);
     const {
         register,
         handleSubmit,
         formState: { errors },
-        watch
+        watch,
+        reset
     } = useForm({ mode: 'onChange' });
     const onSubmit = async (data: any) => {
         const bodyElement = document.querySelector("body");
         setIsPending(true);
+        reset();
         const dataToSend = {
             partner_user: {
                 full_name: data.full_name,
@@ -41,6 +43,11 @@ const Form = ({setShowModal}: {setShowModal: Dispatch<SetStateAction<boolean>> }
             setShowModal(true);
             //@ts-ignore
             bodyElement.style.overflow = "hidden";
+        }
+        else {
+            setError(true)
+            setShowModal(true)
+            setIsPending(false);
         }
     };
 
@@ -85,7 +92,9 @@ const Form = ({setShowModal}: {setShowModal: Dispatch<SetStateAction<boolean>> }
                     type="text"
                     placeholder="Enter Phone"
                     className={`${errors.phone ? 'invalid' : 'valid'} mb-2`}
-                    {...register('phone', { required: 'Phone is required' })}
+                    {...register('phone', { required: 'Phone is required', pattern: {
+                        value: /^\d+$/, message: 'Invalid phone number'
+                        } })}
                 />
                 {
                     //@ts-ignore
@@ -100,7 +109,10 @@ const Form = ({setShowModal}: {setShowModal: Dispatch<SetStateAction<boolean>> }
                     type="email"
                     placeholder="Enter Email"
                     className={`${errors.email ? 'invalid' : 'valid'} mb-2`}
-                    {...register('email', { required: 'Email is required' })}
+                    {...register('email', { required: 'Email is required',pattern: {
+                            value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                            message: 'Invalid email address',
+                        } })}
                 />
                 {
                     //@ts-ignore
@@ -156,7 +168,7 @@ const Form = ({setShowModal}: {setShowModal: Dispatch<SetStateAction<boolean>> }
                     })}
                 />
                 <Image src={`${showPassword ? '/icons/closeEye.svg' : '/icons/eye.svg'}`} width={20} height={20} alt={`icon`} className="absolute top-[30px] right-[35px] " onClick={() => setShowPassword(!showPassword)} />
-                <Image src={`${errors.password ? '/icons/invalid.svg' : '/icons/valid.svg'}`} width={16} height={12} alt={`icon`} className={`absolute top-[30px] right-2`} />
+                <Image src={`${errors.password_confirmation ? '/icons/invalid.svg' : '/icons/valid.svg'}`} width={16} height={12} alt={`icon`} className={`absolute top-[30px] right-2`} />
                 {
                     //@ts-ignore
                     errors.password_confirmation && <span className="error text-[#f44]">{errors.password_confirmation.message}</span>

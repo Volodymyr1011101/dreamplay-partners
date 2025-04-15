@@ -6,20 +6,22 @@ import Modal from "@/app/components/Modal/Modal";
 
 const Connect = () => {
     const [showModal, setShowModal] = useState(false);
+    const [error, setError] = useState(false);
     const handleClose = () => {
         const bodyElement = document.querySelector("body");
         setShowModal(false);
         //@ts-ignore
         bodyElement.style.overflow = "scroll";
+        setError(false);
     }
     return (
         <>
             <Modal show={showModal} onClose={handleClose}>
                 <div className="flex flex-col gap-8 px-4">
-                    <Image src={'/images/success.png'} alt="Success" width={400} height={285} />
+                    <Image src={`${error ? '/images/error.png' : '/images/success.png'}`} alt="Success" width={400} height={285} />
                     <div className="text-center flex flex-col gap-3">
-                        <h2 className="text-white text-2xl">Successfully registered.</h2>
-                        <p className="text-white text-base">Happy to have you as our partner!</p>
+                        <h2 className="text-white text-2xl">{ error ? 'Something went wrong.' : 'Successfully registered.' }</h2>
+                        <p className="text-white text-base">{ error ? 'Try again or contact us directly' : 'Happy to have you as our partner!' }</p>
                     </div>
                 </div>
             </Modal>
@@ -56,7 +58,7 @@ const Connect = () => {
                     </div>
                     <a href="https://dashboard.dreamplayaffiliates.com/affiliate_registration/tfc6c1f52" className={`text-white max-w-[261px] border-2 border-[#24221C] border-solid bg-[#151618] flex  items-center justify-between pl-4 rounded-[100px] mr-auto mb-6`}><span>Become a Partner</span><span className={`p-[28px] bg-[#EFC653] rounded-[50%] `}><Image src={`/images/arrow.png`} alt={'arrow'} width={15} height={15} /></span></a>
                 </div>
-                <Form setShowModal={setShowModal}/>
+                <Form setShowModal={setShowModal} setError={setError}/>
             </div>
         </>
     )

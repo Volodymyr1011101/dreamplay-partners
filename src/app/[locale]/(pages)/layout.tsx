@@ -9,7 +9,15 @@ import './globals.scss';
 import Header from "@/app/components/Header/Header";
 import ScrollToTop from "@/app/components/ui/scrollToTop/ScrollToTop";
 const inter = Inter({ subsets: ['latin'] });
-
+export async function generateMetadata() {
+  return {
+    title: 'Join Dreamplay Affiliates | Premium Casino Affiliate Program',
+    description: 'Join Dreamplay Affiliates and earn competitive commissions by promoting top-tier iGaming brands. Access real-time tracking, dedicated support, and reliable payouts.',
+    alternates: {
+      canonical: 'https://www.dreamplayaffiliates.com/',
+    }
+  }
+}
 export default async function LocaleLayout({
   children,
   params

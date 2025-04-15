@@ -1,5 +1,6 @@
 'use client';
 import type { NextComponentType, NextPageContext } from 'next';
+import Link from "next/link";
 
 
 const Header: NextComponentType<NextPageContext, {}> = () => {
@@ -16,7 +17,10 @@ const Header: NextComponentType<NextPageContext, {}> = () => {
     return (
         <header className="header">
             <div className="logo">
+                <Link href={'/'}>
                 <img src="./images/logo.png" alt="logo"/>
+
+                </Link>
             </div>
             <nav className="nav">
                 <ul className="nav-list">
