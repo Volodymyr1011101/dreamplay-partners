@@ -1,5 +1,6 @@
 import type { NextComponentType, NextPageContext } from 'next';
 import styles from './footer.module.scss';
+import Link from "next/link";
 interface Links {
     label: string;
     link: string;
@@ -9,22 +10,18 @@ const Footer: NextComponentType<NextPageContext, {}> = () => {
 const links = [
     {
         label: 'Terms & Conditions',
-        link: '#'
+        link: '/terms_and_conditions'
     },
     {
         label: "Privacy Policy",
-        link: '#'
+        link: '/privacy_policy'
     },
-    {
-        label: 'Cookie Policy',
-        link: '#'
-    }
 ]
     return (
         <footer className={`bg-[#12110E] relative z-10 p-8 text-white`}>
             <div className={`flex flex-col gap-6 items-center mb-[48px] footer-block relative xxm:flex-row xxm:justify-center`}>
                 {links.map((item) => (
-                    <a href={item.link} key={item.label}> {item.label} </a>
+                    <Link href={item.link} key={item.label}> {item.label} </Link>
                 ))}
             </div>
             <div className={`text-[#8D8D8D]`}>
