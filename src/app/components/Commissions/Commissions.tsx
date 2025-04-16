@@ -26,7 +26,7 @@ const Commissions = () => {
                 <div className={`flex flex-col gap-6 m:flex-row`}>
                     {content.map((item, index) => (
                         <div key={index} className={`bg-[#111111] text-[#D4D4D4] text-[20px] leading-[32px] rounded-[16px] p-6 m:w-[30%] grow`}>
-                            <h3 className={`text-[24px] font-bold text-[#EFC653] tracking-[-.1px]  `}>{item.title}</h3>
+                            <h3 className={`text-[24px] font-bold text-[#EFC653] tracking-[-.1px] mb-4`}>{item.title}</h3>
                             <p>{item.description}</p>
                         </div>
                     ))}

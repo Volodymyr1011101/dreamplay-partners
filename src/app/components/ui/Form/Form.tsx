@@ -6,12 +6,14 @@ import {PacmanLoader} from "react-spinners";
 const Form = ({setShowModal, setError}: {setShowModal: Dispatch<SetStateAction<boolean>>, setError: Dispatch<SetStateAction<boolean>> }) => {
     const [showPassword, setShowPassword] = useState(false);
     const [isPending, setIsPending] = useState(false);
+    const [isChecked, setIsChecked] = useState(false);
     const {
         register,
         handleSubmit,
-        formState: { errors },
+        formState: { errors, touchedFields  },
         watch,
-        reset
+        reset,
+        trigger
     } = useForm({ mode: 'onChange' });
     const onSubmit = async (data: any) => {
         const bodyElement = document.querySelector("body");
@@ -58,11 +60,12 @@ const Form = ({setShowModal, setError}: {setShowModal: Dispatch<SetStateAction<b
             <div className="input-wrapper">
                 <label htmlFor="full_name">Full Name *</label>
                 <input
+
                     id="full_name"
                     type="text"
                     placeholder="Enter Name"
-                    className={`${errors.full_name ? 'invalid' : 'valid'} mb-2`}
-                    {...register('full_name', { required: 'Name is required' })}
+                    className={`${touchedFields.full_name ? (errors.full_name ? 'invalid' : 'valid') : ''} mb-2`}
+                    {...register('full_name', { required: 'Name is required', onBlur: async () => await trigger('full_name') })}
                 />
                 {
                     //@ts-ignore
@@ -76,8 +79,8 @@ const Form = ({setShowModal, setError}: {setShowModal: Dispatch<SetStateAction<b
                     id="company_name"
                     type="text"
                     placeholder="Enter Company Name"
-                    className={`${errors.company_name ? 'invalid' : 'valid'} mb-2`}
-                    {...register('company_name', { required: 'Company name is required' })}
+                    className={`${touchedFields.company_name ? (errors.company_name ? 'invalid' : 'valid') : ''} mb-2`}
+                    {...register('company_name', { required: 'Company name is required', onBlur: async () => await trigger('company_name') })}
                 />
                 {
                     //@ts-ignore
@@ -91,10 +94,10 @@ const Form = ({setShowModal, setError}: {setShowModal: Dispatch<SetStateAction<b
                     id="phone"
                     type="text"
                     placeholder="Enter Phone"
-                    className={`${errors.phone ? 'invalid' : 'valid'} mb-2`}
+                    className={`${touchedFields.phone ? (errors.phone ? 'invalid' : 'valid') : ''} mb-2`}
                     {...register('phone', { required: 'Phone is required', pattern: {
                         value: /^\d+$/, message: 'Invalid phone number'
-                        } })}
+                        }, onBlur: async () => await trigger('phone') })}
                 />
                 {
                     //@ts-ignore
@@ -108,11 +111,11 @@ const Form = ({setShowModal, setError}: {setShowModal: Dispatch<SetStateAction<b
                     id="email"
                     type="email"
                     placeholder="Enter Email"
-                    className={`${errors.email ? 'invalid' : 'valid'} mb-2`}
+                    className={`${touchedFields.email ? (errors.email ? 'invalid' : 'valid') : ''} mb-2`}
                     {...register('email', { required: 'Email is required',pattern: {
                             value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
                             message: 'Invalid email address',
-                        } })}
+                        }, onBlur: async () => await trigger('email') })}
                 />
                 {
                     //@ts-ignore
@@ -126,8 +129,8 @@ const Form = ({setShowModal, setError}: {setShowModal: Dispatch<SetStateAction<b
                     id="address"
                     type="text"
                     placeholder="Enter Messenger"
-                    className={`${errors.address ? 'invalid' : 'valid'} mb-2`}
-                    {...register('address', { required: 'Messenger is required' })}
+                    className={`${touchedFields.address ? (errors.address ? 'invalid' : 'valid') : ''} mb-2`}
+                    {...register('address', { required: 'Messenger is required', onBlur: async () => await trigger('address') })}
                 />
                 {
                     //@ts-ignore
@@ -141,11 +144,11 @@ const Form = ({setShowModal, setError}: {setShowModal: Dispatch<SetStateAction<b
                     id="password"
                     type={`${showPassword ? 'text' : 'password'}`}
                     placeholder="Enter password"
-                    className={`${errors.password ? 'invalid' : 'valid'} mb-2`}
+                    className={`${touchedFields.password ? (errors.password ? 'invalid' : 'valid') : ''} mb-2`}
                     {...register('password', { required: 'password is required',minLength: {
                             value: 8,
                             message: 'Password must be at least 8 characters'
-                        } })}
+                        }, onBlur: async () => await trigger('password') })}
                 />
                 <Image src={`${showPassword ? '/icons/closeEye.svg' : '/icons/eye.svg'}`} width={20} height={20} alt={`icon`} className="absolute top-[30px] right-[35px] " onClick={() => setShowPassword(!showPassword)} />
                 <Image src={`${errors.password ? '/icons/invalid.svg' : '/icons/valid.svg'}`} width={16} height={12} alt={`icon`} className={`absolute top-[30px] right-2`} />
@@ -161,9 +164,10 @@ const Form = ({setShowModal, setError}: {setShowModal: Dispatch<SetStateAction<b
                     id="password_confirmation"
                     type={`${showPassword ? 'text' : 'password'}`}
                     placeholder="Enter password"
-                    className={`${errors.password_confirmation ? 'invalid' : 'valid'} mb-2`}
+                    className={`${touchedFields.password_confirmation ? (errors.password_confirmation ? 'invalid' : 'valid') : ''} mb-2`}
                     {...register('password_confirmation', { required: 'Password is required',
                         validate: (value) => value === password || 'Passwords do not match',
+                        onBlur: async () => await trigger('password_confirmation')
 
                     })}
                 />

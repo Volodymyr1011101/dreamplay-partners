@@ -52,7 +52,7 @@ const FAQ = () => {
             <div className="accordion relative z-10 flex flex-col gap-4 mb-6">
                 {content.map((item, index) => (
                     <div className="accordion-item rounded-[16px] overflow-hidden" key={index}>
-                        <button className={`accordion-header px-4 py-6 flex justify-between w-full items-center bg-[#151618] text-left text-[20px] leading-[32px] font-bold`}><span>{item.title}</span> <span><Image src={'/icons/arrow.svg'} width={15} height={8} alt={'arrow'} className={`faq-arrow rotate-[180deg]`}/></span></button>
+                        <button className={`accordion-header px-4 py-4 flex justify-between w-full items-center bg-[#151618] text-left text-[20px] leading-[32px] font-bold`}><span>{item.title}</span> <span><Image src={'/icons/arrow.svg'} width={15} height={8} alt={'arrow'} className={`faq-arrow rotate-[180deg]`}/></span></button>
                         <div className="accordion-content">
                             {item.description.length > 1 ?
                             <ul className={`flex flex-col gap-2 pb-4`}>

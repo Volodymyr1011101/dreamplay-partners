@@ -71,6 +71,10 @@ table {
     margin: 0 auto;
 }
 
+.test {
+    background-image: url("/images/Illustration.png");
+}
+
 .header {
     background: #12110E80;
     position: relative;
@@ -149,6 +153,7 @@ table {
 
     @media screen and (min-width: 1280px) {
         flex-direction: row;
+        padding: 0;
     }
 }
 
