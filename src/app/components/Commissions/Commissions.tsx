@@ -3,12 +3,12 @@ const Commissions = () => {
 
     const content = [
         {
-            title: 'RevShare – 35% to 50%',
-            description: 'Transparent. Profitable. And most importantly — no negative carryover. Your success resets each month.'
-        },
-        {
             title: 'Choose How You Win',
             description: 'Flexible, fair, and built around your traffic strengths.'
+        },
+        {
+            title: 'RevShare – 35% to 50%',
+            description: 'Transparent. Profitable. And most importantly — no negative carryover. Your success resets each month.'
         },
         {
             title: 'Sub-Affiliate – 5%+',

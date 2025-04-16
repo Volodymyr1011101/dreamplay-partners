@@ -5,22 +5,22 @@ const PartnersPage = () => {
         {
             image: '/icons/global.svg',
             title: 'Untapped Market, Maximum Margins',
-            description: 'High-potential Tier-1 and Tier-2 GEOs: Germany, Austria, Portugal, Sweden, Poland, and Canada. New brand. Fresh traffic. Strong margins.'
+            description: 'Targeting top Tier-1 & Tier-2 GEOs — Germany, Austria, Portugal, Poland, and Canada. A fresh brand with strong traffic and solid margins.'
         },
         {
             image: '/icons/crown.svg',
             title: 'Elite Yet Agile Affiliate Experience',
-            description: 'Dedicated managers, tailored commission deals, and fast onboarding. We stay proactive, hands-on, and obsessed with performance. You’re never flying solo.'
+            description: 'Dedicated managers, special deals, and fast onboarding. We stay proactive, hands-on, and obsessed with performance. You’re never flying solo.'
         },
         {
             image: '/icons/global.svg',
-            title: 'Untapped Market, Maximum Margins',
-            description: 'High-potential Tier-1 and Tier-2 GEOs: Germany, Austria, Portugal, Sweden, Poland, and Canada. New brand. Fresh traffic. Strong margins.'
+            title: 'Transparent Stats, Real Revenue',
+            description: 'Instant earnings visibility, no bundled brands, no surprises. Real revenue, clean reporting, and full clarity in what you earn — precisely, in real time.'
         },
         {
             image: '/icons/building.svg',
             title: 'Promotions That Actually Perform',
-            description: 'Curated in-house promotions and VIP programs designed to retain and convert, because we own the whole stack. Consistent, data-backed, and tailored to win.'
+            description: 'Curated in-house promos and VIP programs designed to retain and convert — because we own the full stack. Consistent, data-backed, and built to win.'
         },
         {
             image: '/icons/bag.svg',
@@ -29,7 +29,7 @@ const PartnersPage = () => {
         },
         {
             image: '/icons/phone.svg',
-            title: 'Support That Converts',
+            title: 'Reliable Support That Converts',
             description: 'Top-tier conversion rates, VIP-level account managers, and tailored partner offers — built on responsiveness, transparency, and real care.'
         }
     ]
