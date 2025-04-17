@@ -152,9 +152,9 @@ export const terms = [
         items: [
             "6.1. Subject to your adherence to the provisions of the Affiliate Agreement, you will earn Commission in accordance with the Commission Structure. We retain the right to change the Commission percentage and method of calculation of Commission in accordance with this clause.",
 
-            "6.2. The Commission is calculated at the start of each month following a reconciliation process. Payments are issued within five (5) working days from the beginning of the month.",
+            "6.2. The Commission is calculated at the start of each month following a reconciliation process. We pay for traffic that was directed to the Company Websites up until the 20th day of the previous month.",
 
-            "6.3. Payment of Commission will be made through our Affiliate Wallet. Due to existing regulations, Affiliates may be required for verification and “know your customer” documentation before a withdrawal can be accessed.",
+            "6.3. Company reserves up to two weeks for traffic evaluation before Commissions are finalized and paid. After evaluation payment are issued within five (5) working days from the written request of the Affiliate. If the Affiliate disagrees with the calculated amount, they have five (5) calendar days from the date of evaluation to submit an appeal. After this period, the reported amount will be considered final and accepted.",
 
             "6.4. A minimum amount of €100 (one hundred euro) may be withdrawn from the Affiliate Wallet at one time.",
 
