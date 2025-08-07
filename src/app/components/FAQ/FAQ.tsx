@@ -67,7 +67,7 @@ const FAQ = () => {
                     </div>
                 ))}
             </div>
-            <a href="https://t.me/Yaroslav" className={`text-white max-w-[261px] border-2 border-[#24221C] border-solid bg-[#151618] flex  items-center justify-between pl-4 rounded-[100px] ml-auto`}><span>Still have questions? </span><span className={`p-[28px] bg-[#EFC653] rounded-[50%] `}><Image src={`/images/arrow.png`} alt={'arrow'} width={15} height={15} /></span></a>
+            <a href="https://t.me/Dima_Dreamplay" className={`text-white max-w-[261px] border-2 border-[#24221C] border-solid bg-[#151618] flex  items-center justify-between pl-4 rounded-[100px] ml-auto`}><span>Still have questions? </span><span className={`p-[28px] bg-[#EFC653] rounded-[50%] `}><Image src={`/images/arrow.png`} alt={'arrow'} width={15} height={15} /></span></a>
         </div>
     )
 }

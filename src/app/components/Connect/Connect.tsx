@@ -49,7 +49,7 @@ const Connect = () => {
                         <a href="mailto:affiliates@dreamplay.bet">📧 affiliates@dreamplay.bet</a>
                         <div className={`flex gap-[3px] text-[#FBF8F3]`}>
                             <span>💬</span>
-                            <a href="https://t.me/dreamplay_aff">Telegram</a>
+                            <a href="https://t.me/Dima_Dreamplay">Telegram</a>
                             <span>|</span>
                             <a href="https://teams.microsoft.com/l/chat/0/0?users=affiliates@dreamplay.bet">Teams</a>
                             {/*<span>|</span>*/}
